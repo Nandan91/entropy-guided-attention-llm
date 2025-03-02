@@ -14,7 +14,7 @@ A lightweight, modular implementation of entropy regularization for transformer 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/transformer-entropy-regularization.git
+git clone https://github.com/Nandan91/transformer-entropy-regularization.git
 cd transformer-entropy-regularization
 
 # Install as a package (optional)
@@ -69,10 +69,3 @@ By controlling attention entropy, models may develop more focused or diverse att
 - `tolerance_margin_factor`: Fraction of max entropy to use as tolerance margin (default: 0.20)
 - `context_size`: Size of the context window for calculating max entropy (optional, inferred from attention matrices if not provided)
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.

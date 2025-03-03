@@ -105,7 +105,7 @@ If you find this code or our paper useful in your research, please consider citi
 @article{jha2025entropy,
    title={Entropy-Guided Attention for Private LLMs},
    author={Jha, Nandan Kumar and Reagen, Brandon},
-   journal={The 6th Workshop on Privacy-Preserving Artificial Intelligence Workshop (AAAI)},
+   journal={The 6th Workshop on Privacy-Preserving Artificial Intelligence (AAAI)},
    year={2025}
 }
 ```

@@ -1,6 +1,10 @@
-# Entropy Regularization for Transformer Attention
+# Entropy-Guided Attention for Private LLMs
 
-A lightweight, modular implementation of entropy regularization for transformer attention mechanisms. This module helps control the entropy of attention distributions in transformers, potentially improving model performance and interpretability.
+This is the official PyTorch implementation of our AAAI 2025 workshop (PPAI) paper "Entropy-Guided Attention for Private LLMs". 
+
+Our entropy regularization module is designed to balance the entropy values of attention heads in the absence of crucial nonlinearities in LLMs, enhancing privacy while maintaining performance.
+
+![Entropy-guided Attention](https://github.com/Nandan91/entropy-guided-attention-llm/raw/main/assets/entropy_guided_attention.png)
 
 ## Features
 
@@ -10,15 +14,31 @@ A lightweight, modular implementation of entropy regularization for transformer 
 - Easy integration with Hugging Face Transformers
 - Metrics logging for monitoring attention entropy
 
+## Directory Structure
+
+```
+entropy-guided-attention-llm/
+├── entropy_reg/
+│   ├── __init__.py
+│   └── entropy_regularization.py
+├── examples/
+│   └── usage_example.py
+├── assets/
+│   └── entropy_guided_attention.png
+├── LICENSE
+├── README.md
+└── requirements.txt
+```
+
 ## Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/transformer-entropy-regularization.git
-cd transformer-entropy-regularization
+git clone https://github.com/Nandan91/entropy-guided-attention-llm.git
+cd entropy-guided-attention-llm
 
-# Install as a package (optional)
-pip install -e .
+# Install dependencies
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -26,7 +46,7 @@ pip install -e .
 ### Basic Usage
 
 ```python
-from entropy_regularization import EntropyRegularization
+from entropy_reg.entropy_regularization import EntropyRegularization
 
 # Initialize regularizer
 regularizer = EntropyRegularization(
@@ -49,7 +69,7 @@ total_loss = ce_loss + entropy_reg_loss
 
 ### Using with Hugging Face Transformers
 
-See `usage_example.py` for a complete example of using the entropy regularization module with the Hugging Face Transformers library.
+See `examples/usage_example.py` for a complete example of using the entropy regularization module with the Hugging Face Transformers library.
 
 ## How It Works
 
@@ -61,13 +81,32 @@ The regularization loss is calculated as follows:
 4. Average penalties across heads and layers
 5. Scale the final loss by a loss coefficient
 
-By controlling attention entropy, models may develop more focused or diverse attention patterns as needed for the task.
+By controlling attention entropy, models develop more balanced attention patterns that protect privacy without sacrificing performance.
 
 ## Parameters
 
 - `loss_coeff`: Coefficient for the entropy regularization loss (default: 1e-5)
 - `tolerance_margin_factor`: Fraction of max entropy to use as tolerance margin (default: 0.20)
 - `context_size`: Size of the context window for calculating max entropy (optional, inferred from attention matrices if not provided)
+
+## Paper Summary
+
+For a video summary of our paper, check out the overview by Arxiv Papers:
+
+[![Paper Summary](https://img.youtube.com/vi/iX7dO8J7wuY/0.jpg)](https://www.youtube.com/watch?v=iX7dO8J7wuY)
+
+## Citation
+
+If you find this code or our paper useful in your research, please consider citing:
+
+```bibtex
+@article{jha2025entropy,
+   title={Entropy-Guided Attention for Private LLMs},
+   author={Jha, Nandan Kumar and Reagen, Brandon},
+   journal={The 6th AAAI Workshop on Privacy-Preserving Artificial Intelligence},
+   year={2025}
+}
+```
 
 ## Contributing
 

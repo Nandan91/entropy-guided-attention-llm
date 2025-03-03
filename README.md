@@ -6,7 +6,7 @@ Our entropy regularization module is designed to balance the entropy values of a
 
 ![Entropy-guided Attention](https://github.com/Nandan91/entropy-guided-attention-llm/raw/main/assets/entropy_guided_attention.png)
 
-*Entropy-Guided Attention: Balanced Entropy Distribution through Learnable FFN Scaling and Parameterized Attention Regularization*
+*Entropy-Guided Private LLM Design: Learnable FFN scaling stabilizes training, while the Parameterized Attention Mechanism, combined with Entropy Regularization, ensures a well-balanced entropy distribution*
 
 ## Features
 

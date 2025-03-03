@@ -114,6 +114,3 @@ If you find this code or our paper useful in your research, please consider citi
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.

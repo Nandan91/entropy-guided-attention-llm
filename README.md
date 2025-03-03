@@ -6,6 +6,13 @@ Our entropy regularization module is designed to balance the entropy values of a
 
 ![Entropy-guided Attention](https://github.com/Nandan91/entropy-guided-attention-llm/raw/main/assets/entropy_guided_attention.png)
 
+<p align="center">
+     <img src="assets/entropy_guided_attention.png" width="100%">
+     <br>
+     <em>Entropy-guided Private LLM Design: Learnable-scaling in FFN prevents entropy collapse and parameterized-attention paired with entropy-regularization mitigates entropic overload.</em>
+</p>
+
+
 ## Features
 
 - Entropy calculation for attention matrices

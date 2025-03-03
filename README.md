@@ -5,8 +5,8 @@ This is the official PyTorch implementation of our AAAI 2025 workshop (PPAI) pap
 Our entropy regularization module is designed to balance the entropy values of attention heads in the absence of crucial nonlinearities in LLMs, enhancing privacy while maintaining performance.
 
 ![Entropy-guided Attention](https://github.com/Nandan91/entropy-guided-attention-llm/raw/main/assets/entropy_guided_attention.png)
-*Entropy-guided Private LLM Design: Learnable-scaling in FFN prevents entropy collapse and parameterized-attention paired with entropy-regularization mitigates entropic overload.*
 
+*Entropy-Guided Attention: Balanced Entropy Distribution through Learnable FFN Scaling and Parameterized Attention Regularization*
 
 ## Features
 

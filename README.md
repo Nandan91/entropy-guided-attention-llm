@@ -54,7 +54,7 @@ from entropy_reg.entropy_regularization import EntropyRegularization
 regularizer = EntropyRegularization(
     loss_coeff=1e-5,
     tolerance_margin_factor=0.20,
-    context_size=1024  # Optional, inferred from attention matrices if not provided
+    context_size=256  # Optional, inferred from attention matrices if not provided
 )
 
 # Get regularization loss (inside training loop)
